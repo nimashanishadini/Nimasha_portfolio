@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<head>
+
+<style>
+.nav-container{
+    background-color:#021b1d;
+    height: 100%;
+}
+
+.nav{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 30px 80px; 
+    font-size: 27px; 
+    background-color: rgb(31, 30, 63);
+    height: 100%;
+   
+}
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu{
+     color: white;
+     padding: 8px 10px; 
+     border: 0px solid #b82525;
+}
+
+.menu a{
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: .3s ease;
+    align-items: end; 
+}
+
+.menu  a:hover{
+    color: #0ef;
+    padding: 8px 10px;
+    border: 0px solid #fff;
+}
+
+.content{
+    position: relative;  
+    justify-content: space-between; 
+    align-items: center;
+    padding: 40px 10% 0;
+    color: #fff;
+}
+
+.content p{
+    font-size: 20px;
+}
+.content-im{
+    display: flex; 
+    width: 350px; 
+    height: 350px; 
+    border-radius: 50%;
+    margin-left: 800px;
+    margin-top: -350px;
+}
+.home{
+    position: relative;
+   justify-content: space-between;
+    height: 100vh;
+    background-size:cover;
+    background-position:center; 
+    padding: 20px 2% 0;
+    display: flex;
+}
+
+.content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.content h1{
+   font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+.home-ic a{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin:  30px 15px 30px 0px ;
+   
+}
+
+.home-ic a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan;
+    
+}
+
+/*about section css.........................*/
+
+.about{
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #081b29;
+   
+}
+
+.about-img img{
+    padding-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    justify-content: start;
+    margin-left: 180px;
+    margin-top: 50px;
+   
+    
+}
+
+.about-text{
+    display: inline;
+    margin-left: 600px;
+    margin-top: -290px;
+}
+
+.about-text h2{
+    font-size: 60px;
+    color: #fff;
+}
+
+.about-text h2 span{
+    color: rgb(16, 220, 234);
+}
+
+.about-text h4{
+    font-size: 29px;
+    color: white;
+    font-weight: 600;
+    margin: 15px 0 30px;
+}
+
+.about-text p{
+    font-size: 20px;
+    color: white;
+    line-height: 1.4;
+}
+
+/*skill section css.........................*/
+
+
+.skills{
+    background-color:#021b1d;
+    margin-top: 90px;
+}
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.main-text{
+    
+    text-align: center;
+    padding-top: 35px;
+    ;
+}
+
+.main-text p{
+    color: white;
+    gap: 10px;
+}
+
+.main-text h2{
+    font-size: 60px;
+    color: #0ef;
+    
+}
+
+.skill-main{
+    color: #fff;
+}
+
+.skill-main h3{
+   margin-bottom: 2rem;
+   font-size: var(--nornam-font);
+   text-align: center;
+}
+
+.skill-left .skill-bar .info{
+    display: flex;
+    gap: 380px;
+    align-items: center ;
+    padding: 0 10px;
+    margin-left: 60px;
+    margin-left: 90px;
+    
+}
+
+.skill-left .skill-bar .bar{
+    width: 70%;
+    height: 10px;
+    background-color: rgb(157, 16, 196);
+    border-radius: 25px;
+    margin-left: 60px;
+    color: #0ef;
+    position: relative;
+    margin-left: 90px;
+}
+
+.skill-bar{
+    margin-bottom: 2.3rem;
+}
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    background: #0ef;
+    border-radius: 25px;
+    box-shadow: var(--nean-box-shadow);
+}
+
+.skill-bar .bar .html{
+    width: 80%;
+    animation: html 2s;
+}
+.skill-bar .bar .figma{
+    width: 90%;
+    animation: figma 3s;
+}
+.skill-bar .bar .javascript{
+    width: 60%;
+    animation: javascript 4s;
+}
+.skill-bar .bar .css{
+    width: 82%;
+    animation: css 5s;
+}
+ 
+
+/*skill right css.........................*/
+
+.professional{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.boxx{
+    margin: 10px 0 ;
+    flex: 1 1 15rem ;
+}
+
+.boxx .textb{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.boxx .textb big{
+    font: 40px;
+    letter-spacing: 1px;
+    position: absolute;
+    align-items:center;
+    margin-top: -75px;
+    margin-left: -25px;
+}
+
+.boxx .textb small{
+    display: block;
+    font-weight: 600;
+}
+
+
+.circle{
+    width: 90%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.circle .points{
+    width: 2px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*120deg))  translateY(-45px);
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
+
+/*contact right css.........................*/
+
+.contant{
+    background-color: #021b1d;
+    width: 100%;
+    height: 100%;
+
+}
+
+.contant form{
+    text-align: center;
+    max-width: 50rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+
+.contant form input, .contant form textarea{
+    width: 100%;
+    color:white;
+    background-color: rgb(30, 30, 31);
+    margin-bottom: .8rem;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+    display: inline;
+    text-decoration: double;
+}
+
+.contant form textarea{
+    resize: none;
+}
+
+.formBtn .btn{
+  text-decoration: none;
+}
+
+/*latest project right css.........................*/
+
+.portfoilo{
+    background-color: #081b29;
+}
+
+.fillter-buttons{
+    margin: 2rem;
+    text-align: center;
+}
+
+.fillter-buttons .btn{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .85rem;
+    letter-spacing: .4px;
+    margin-left: 1.3rem;
+    color: #fff;
+}
+
+.fillter-buttons .btn:hover{
+    color:#0ef;
+}
+
+.portfoilo-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 2rem;
+    justify-content: center;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.port-box{
+    border-radius: 15px;
+    overflow: hidden;
+    background:none;
+    display: flex;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    border: 5px solid var(green);
+    justify-content: center;
+    border-color: #0ef;
+}
+
+
+
+
+
+
+footer{
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p{
+    color: red;
+
+}
+
+footer a{
+    display: inline-flex;
+    justify-content: center;
+    color: #b82525;
+    background-color: antiquewhite;
+    padding: .6rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes figma{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 82%;
+    }
+}
+
+@keyframes glow{
+    0%{
+        background-color: red;
+        box-shadow: none;
+    }
+
+    100%{
+        background-color:yellow;
+        box-shadow: var(--nean-box-shadow);
+    }
+}
+
+
+
+
+
+    </style>
+   
+ <title>portfoilo</title>
+ 
+</head>
+<body>
+    
+
+    <div class="nav-container">
+
+    <div class ="nav">
+        <a href="#" class="logo"> Nimasha</a>
+    
+         <div class="menu"style="">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">portfoilo</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+      <!-- Home section  ..............................................................................................-->>
+
+    <section class="home">
+
+    <div class="content" >
+            <h3> Hello , It's Me</h3>
+            <h1> Nimasha Nishadini </h1>
+            <h3> And I'm a </h3>
+            <p> student at Sabaragamuwa University of Sri Lanka,
+                 pursuing a degree in<br> Computing and Information Systems.<br> I have a keen interest in UI/UX design and front-end development,
+                 and I have gained <br>valuable experience in website design.
+            </p>
+
+
+
+            <div class="content-im" >
+                <img src="C:\Users\DELL\Desktop\portfolio\Untitled design-fotor-2024060604734.png" alt="photo">
+            </div>
+
+            <div class="home-ic">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp-square' ></i></a>
+                    <a href="#"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+
+            <div>
+                <a href="#" class="btn-box"> More About Me </a>
+            </div>
+
+    </div>
+
+    </section>
+
+   <!-- about me section  ..............................................................................................-->>
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="C:\Users\DELL\Desktop\portfolio\Untitled design-fotor-2024060604734.png">
+    </div>
+
+    <div class="about-text">
+        <h2> About <span>Me</span></h2>
+        <h4> Full Stack Developer </h4>
+        <p> My name is Nimasha Nishadini, and I am a student at Sabaragamuwa University of Sri Lanka, pursuing a <br>degree in Computing and Information Systems.
+             I have a strong passion for UI/UX design and front-end development, complemented by practical experience in website design. My skill set includes leadership, 
+             team management, and effective communication, allowing me to successfully lead and collaborate within teams. Proficient in both English and Sinhala, 
+             I can connect with a diverse range of individuals. I am dedicated to leveraging my skills to create intuitive and engaging digital experiences, focusing 
+             on user-friendly interfaces<br> and seamless user experiences. With a solid foundation in computing and information systems,
+             I am eager to contribute to innovative web projects and continue developing my expertise in the field.</p>
+
+            <a href="#" class="btn-box"> More About Me </a>
+    </div>
+</section>
+
+<!-- skill section  ..............................................................................................-->
+<section id="skills" class="skills">
+    <div class="main-text">
+        <p>Technocal and professional </p>
+        <h2> My skills</h2>
+    </div>
+
+
+    <div class="skill-main">
+
+    <div class="skill-left">
+        <h3> Technical Skill</h3>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <p>80%</p>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Figma</p>
+                    <p>90%</p>
+                </div>
+                <div class="bar">
+                    <span class="figma"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>JavaScript</p>
+                    <p>65%</p>
+                </div>
+                <div class="bar">
+                    <span class="javascript"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <p>82%</p>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>React</p>
+                    <p>80%</p>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+    </div>
+
+    <div class="skill-right">
+        <h3> Professional skill </h3>
+
+        <div class="professional">
+            <div class="boxx">
+                <div class="circle">
+                    <div class="points" style="--i:1"></div>
+                    <div class="points" style="--i:2"></div>
+                    <div class="points" style="--i:3"></div>
+                </div>
+
+                    <div class="textb">
+                        <big>90%</big>
+                        <small>Team Work</small>
+
+                    </div>
+
+            </div>
+
+            <div class="boxx">
+                <div class="circle">
+                    <div class="points" style="--i:1"></div>
+                    <div class="points" style="--i:2"></div>
+                    <div class="points" style="--i:3"></div>
+                </div>
+
+                    <div class="textb">
+                        <big>80%</big>
+                        <small>communication</small>
+
+                    </div>
+
+            </div>
+
+            <div class="boxx">
+                <div class="circle">
+                    <div class="points" style="--i:1"></div>
+                    <div class="points" style="--i:2"></div>
+                    <div class="points" style="--i:3"></div>
+                </div>
+
+                    <div class="textb">
+                        <big>70%</big>
+                        <small>Creativity</small>
+
+                    </div>
+
+            </div>
+
+            <div class="boxx">
+                <div class="circle">
+                    <div class="points" style="--i:1"></div>
+                    <div class="points" style="--i:2"></div>
+                    <div class="points" style="--i:3"></div>
+                </div>
+
+                    <div class="textb">
+                        <big>65%</big>
+                        <small>Project Management</small>
+
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+     </div>
+</section>
+
+
+<!-- my project section  ..............................................................................................-->
+
+
+<section id="portfoilo" class="portfoilo">
+    <div class="main-text">
+        <p> What i will do for you</p>
+        <h2> Latest Project </h2>
+    </div>
+
+    <div class="container">
+        <div class="fillter-buttons">
+            <button class="btn"> All</button>
+            <button class="btn"> Product</button>
+            <button class="btn"> Interesting </button>
+            <button class="btn"> Web App</button>
+        </div>
+
+        <div class="portfoilo-gallery">
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="img-5.jpg">
+                </div>
+
+                <div class="port-content">
+                    <h3>Grapic Design </h3>
+                    <p>student at Sabaragamuwa University of Sri Lanka, pursuing a degree in Computing and Information Systems.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="img-5.jpg">
+                </div>
+
+                <div class="port-content">
+                    <h3>Grapic Design </h3>
+                    <p>student at Sabaragamuwa University of Sri Lanka, pursuing a degree in Computing and Information Systems.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+                
+            </div>
+
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="img-5.jpg">
+                </div>
+
+                <div class="port-content">
+                    <h3>Grapic Design </h3>
+                    <p>student at Sabaragamuwa University of Sri Lanka, pursuing a degree in Computing and Information Systems.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+                
+            </div>
+
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="img-5.jpg">
+                </div>
+
+                <div class="port-content">
+                    <h3>Grapic Design </h3>
+                    <p>student at Sabaragamuwa University of Sri Lanka, pursuing a degree in Computing and Information Systems.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+                
+            </div>
+
+                
+              
+                    
+                    
+                        
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!--Contact section....................................................-->
+
+    <section id="contact" class="contant">
+        <div class="main-text">
+            <p> Ask me Question </p>
+            <h2> Contact Me</h2>
+        </div>
+
+        <form action="#">
+            <input type="text" placeholder="Your name">
+            <input type="text" placeholder="Your Email">
+            <input type="text" placeholder="Your Address">
+            <input type="number" placeholder="Phone Number"> 
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your massage"></textarea>
+
+            <div class="btn-box formBtn">
+                <a href="#"  class="btn"> Send Message </a>
+
+
+
+                
+            </div>
+
+
+
+         
+        </form>
+    </section>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>   
+</body>
+</html>
